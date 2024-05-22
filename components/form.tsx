@@ -22,7 +22,7 @@ const DemoForm1: NextPage = () => {
         Email,
         Howcanweimprove,
       }
-  
+      console.log(form);
       // submit via api
       const response = await fetch('/api/submit',{
         method: 'POST',
@@ -38,9 +38,9 @@ const DemoForm1: NextPage = () => {
     alert("Your review has been submitted.")
 
     setName('')
-    // setContactdetails('')
-    // setEmail('')
-    // setHowcanweimprove('')
+    setContactdetails('')
+    setEmail('')
+    setHowcanweimprove('')
 
 
   }
