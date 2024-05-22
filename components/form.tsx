@@ -38,9 +38,9 @@ const DemoForm1: NextPage = () => {
     alert("Your review has been submitted.")
 
     setName('')
-    setContactdetails('')
-    setEmail('')
-    setHowcanweimprove('')
+    // setContactdetails('')
+    // setEmail('')
+    // setHowcanweimprove('')
 
 
   }
