@@ -6,6 +6,10 @@ import styles from "./form.module.css";
 import { FormEvent } from "react";
 import React, { useState } from 'react';
 
+
+
+
+
 const DemoForm1: NextPage = () => {
   const [Name, setName]=useState('')
   const [Contactdetails, setContactdetails]=useState('')
@@ -14,38 +18,42 @@ const DemoForm1: NextPage = () => {
 
   
 
-    const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
-      e.preventDefault();
-      const form = {
-        Name,
-        Contactdetails,
-        Email,
-        Howcanweimprove,
-      }
-      console.log(form);
-      // submit via api
-      const response = await fetch('/api/submit',{
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const form = {
+      Name,
+      Contactdetails,
+      Email,
+      Howcanweimprove,
+    };
+    console.log(form);
+  
+    try {
+      const response = await fetch('/api/submit', {
         method: 'POST',
         headers: {
           'Accept': 'application/json',
-          'Content-Type': 'application/json'
+          'Content-Type': 'application/json',
         },
-        body: JSON.stringify(form)
-      })
+        body: JSON.stringify(form),
+      });
   
-
-    const content = await response.json();
-    alert("Your review has been submitted.")
-
-    setName('')
-    setContactdetails('')
-    setEmail('')
-    setHowcanweimprove('')
-
-
-  }
-
-
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+  
+      const content = await response.json();
+      alert("Your review has been submitted.");
+      
+      setName('');
+      setContactdetails('');
+      setEmail('');
+      setHowcanweimprove('');
+    } catch (error) {
+      console.error("There was an error submitting the form:", error);
+      alert("There was an error submitting your review. Please try again.");
+    }
+  };
 
   
   return (
