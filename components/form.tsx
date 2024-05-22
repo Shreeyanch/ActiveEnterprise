@@ -53,9 +53,10 @@ const DemoForm1: NextPage = () => {
       <div className={styles.shareYourTravelsForm}>
         
         <form className={styles.form} onSubmit={handleSubmit}>
-        <div className={styles.formHeader}>
+        {/* <div className={styles.formHeader}>
         <div className={styles.yourFeedbackIs}>YOUR FEEDBACK IS VALUABLE</div>
-        </div>        <div className={styles.formFields}>
+        </div>         */}
+        <div className={styles.formFields}>
         <div className={styles.nameInput}>
            <TextField
             className={styles.input}
