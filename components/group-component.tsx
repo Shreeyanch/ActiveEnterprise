@@ -10,13 +10,13 @@ const GroupComponent: NextPage = () => {
   }, []);
 
   const onTiktokImageClick = useCallback(() => {
-    window.location.href =
-      "https://www.tiktok.com/@activeenterprises369?_t=8mXRsQtream&_r=1";
+    window.open (
+      "https://www.tiktok.com/@activeenterprises369?_t=8mXRsQtream&_r=1");
   }, []);
 
   const onImage13IconClick = useCallback(() => {
     window.open(
-      "https://www.facebook.com/profile.php?id=61558959911050&mibextid=LQQJ4d&rdid=FTJC5AdWnSxFXvHh"
+      "https://www.instagram.com/riyaj_style_369/"
     );
   }, []);
 
