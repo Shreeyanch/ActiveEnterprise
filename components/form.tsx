@@ -10,7 +10,7 @@ const DemoForm1: NextPage = () => {
   const [Name, setName]=useState('')
   const [Contactdetails, setContactdetails]=useState('')
   const [Email, setEmail]=useState('')
-  const [Howcanweimprove, setHowcanweimprove]=useState('')
+  // const [Howcanweimprove, setHowcanweimprove]=useState('')
 
   
 
@@ -20,7 +20,7 @@ const DemoForm1: NextPage = () => {
         Name,
         Contactdetails,
         Email,
-        Howcanweimprove,
+        // Howcanweimprove,
       }
   
       // submit via api
@@ -40,7 +40,7 @@ const DemoForm1: NextPage = () => {
     setName('')
     setContactdetails('')
     setEmail('')
-    setHowcanweimprove('')
+    // setHowcanweimprove('')
 
 
   }
@@ -100,7 +100,7 @@ const DemoForm1: NextPage = () => {
             onChange={e=>setEmail(e.target.value)}
           />
         </div>
-        <div className={styles.nameInput}>
+        {/* <div className={styles.nameInput}>
           <TextField
             className={styles.input3}
             color="primary"
@@ -115,7 +115,7 @@ const DemoForm1: NextPage = () => {
             value={Howcanweimprove}
             onChange={e=>setHowcanweimprove(e.target.value)}
           />
-        </div>
+        </div> */}
       </div>
 
           <button type='submit' className={styles.formSubmitButton}>
