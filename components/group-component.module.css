@@ -1,0 +1,136 @@
+.connectWithUs {
+  height: 27px;
+  position: relative;
+  line-height: 130%;
+  font-weight: 500;
+  display: inline-block;
+}
+.bdd3242Fdeb4b0c980514815b2Icon,
+.image13Icon,
+.tiktokIcon {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 45.1px;
+  height: 46.1px;
+  object-fit: cover;
+  cursor: pointer;
+}
+.image13Icon,
+.tiktokIcon {
+  top: 0;
+  left: 46px;
+  width: 55.7px;
+  height: 50px;
+}
+.image13Icon {
+  top: 2px;
+  left: 102.6px;
+  width: 47.4px;
+  height: 46.1px;
+}
+.bdd3242Fdeb4b0c980514815b2Parent {
+  width: 150px;
+  position: relative;
+  height: 50px;
+}
+.connectWithUsParent,
+.frameWrapper {
+  width: 1440px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.connectWithUsParent {
+  height: 201px;
+  flex-direction: column;
+  gap: var(--gap-11xs);
+}
+.frameWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 75px;
+  flex-direction: row;
+  padding: var(--padding-xl) 0;
+  box-sizing: border-box;
+}
+.poweredBy {
+  height: 13px;
+  position: relative;
+  line-height: 130%;
+  font-weight: 300;
+  display: inline-block;
+}
+.letterLogo2 {
+  width: 97px;
+  position: relative;
+  height: 17px;
+  object-fit: cover;
+  mix-blend-mode: normal;
+  cursor: pointer;
+}
+.frameContainer,
+.poweredByParent {
+  width: 1440px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.poweredByParent {
+  height: 26px;
+  flex-direction: row;
+  gap: var(--gap-11xs);
+}
+.frameContainer {
+  position: absolute;
+  top: 109.5px;
+  left: 0;
+  height: 18px;
+  flex-direction: column;
+  font-size: var(--font-size-3xs);
+  color: var(--color-gray-100);
+}
+.frameParent {
+  width: 1440px;
+  position: relative;
+  height: 127.5px;
+  text-align: center;
+  font-size: var(--font-size-2xl);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
+@media screen and (max-width: 1200px) {
+  .connectWithUs {
+    font-weight: 500;
+    font-family: var(--font-montserrat);
+    font-size: var(--font-size-mid);
+  }
+  .frameWrapper {
+    display: flex;
+  }
+  .poweredBy {
+    font-weight: 300;
+    font-family: var(--font-montserrat);
+    font-size: var(--font-size-mid);
+  }
+}
+@media screen and (max-width: 960px) {
+  .frameWrapper {
+    display: flex;
+  }
+}
+@media screen and (max-width: 420px) {
+  .connectWithUs,
+  .poweredBy {
+    font-weight: 500;
+    font-family: var(--font-montserrat);
+    font-size: var(--font-size-mini);
+  }
+  .poweredBy {
+    font-weight: 100;
+  }
+  .letterLogo2 {
+    width: 100px;
+  }
+}

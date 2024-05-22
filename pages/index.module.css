@@ -1,0 +1,116 @@
+.image12Icon {
+  width: 128px;
+  position: relative;
+  border-radius: var(--br-81xl);
+  height: 127px;
+  object-fit: cover;
+}
+.activeEnterprises {
+  margin: 0;
+}
+.extraordinaryChoice {
+  margin: 0;
+  font-size: var(--font-size-5xl);
+  font-weight: 600;
+  color: var(--color-crimson-100);
+}
+.activeEnterprisesExtraordinContainer {
+  position: relative;
+  line-height: 130%;
+}
+.modalWrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.poweredBy {
+  height: 13px;
+  position: relative;
+  line-height: 130%;
+  font-weight: 300;
+  display: inline-block;
+}
+.letterLogo2 {
+  width: 97px;
+  position: relative;
+  height: 12px;
+  object-fit: cover;
+  mix-blend-mode: normal;
+  cursor: pointer;
+}
+.poweredByParent {
+  width: 1440px;
+  height: 26px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-11xs);
+}
+.frameWrapper {
+  align-self: stretch;
+  padding: var(--padding-xl) 0;
+  font-size: var(--font-size-3xs);
+  color: var(--color-gray-100);
+  font-family: var(--font-inter);
+}
+.demoForm,
+.frameWrapper,
+.image12Parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.image12Parent {
+  align-self: stretch;
+  padding: 100px 0;
+  gap: var(--gap-xl);
+}
+.demoForm {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  height: 870px;
+  overflow: hidden;
+  mix-blend-mode: normal;
+  text-align: center;
+  font-size: var(--font-size-21xl);
+  color: var(--color-darkslateblue);
+  font-family: var(--font-montserrat);
+}
+@media screen and (max-width: 1200px) {
+  .activeEnterprisesExtraordinContainer {
+    font-size: var(--font-size-11xl);
+  }
+  .poweredBy {
+    font-weight: 300;
+    font-family: var(--font-montserrat);
+    font-size: var(--font-size-mid);
+  }
+}
+@media screen and (max-width: 420px) {
+  .activeEnterprisesExtraordinContainer {
+    font-size: var(--font-size-11xl);
+  }
+  .poweredBy {
+    font-weight: 100;
+    font-family: var(--font-montserrat);
+    font-size: var(--font-size-mini);
+  }
+  .letterLogo2 {
+    width: 100px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .activeEnterprisesExtraordinContainer {
+    font-size: var(--font-size-6xl);
+  }
+  .modalWrapper {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}
