@@ -4,6 +4,8 @@
   height: 32px;
   overflow: hidden;
   flex-shrink: 0;
+  color: var(--color-black);
+
 }
 .buttonrounded {
   border-radius: var(--br-21xl);
@@ -15,4 +17,5 @@
   align-items: flex-start;
   justify-content: flex-start;
   padding: var(--padding-5xs);
+  
 }
