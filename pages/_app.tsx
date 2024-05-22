@@ -21,6 +21,8 @@ export default function MyApp(props: AppProps) {
   return (
     <Fragment>
       <Head>
+      <link rel="shortcut icon" href="/image-12@2x.png" />
+
         <title>Active</title>
         <meta
           name="viewport"
