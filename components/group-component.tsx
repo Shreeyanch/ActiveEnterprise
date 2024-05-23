@@ -16,7 +16,7 @@ const GroupComponent: NextPage = () => {
 
   const onImage13IconClick = useCallback(() => {
     window.open(
-      "https://www.instagram.com/riyaj_style_369/"
+      "https://www.instagram.com/activeenterprises.369?igsh=MXZzaWJ1ZmozMnFpeg=="
     );
   }, []);
 
